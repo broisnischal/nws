@@ -1,0 +1,20 @@
+.Secondary-nav {
+	position: fixed;
+	top: calc(100% - 50%);
+	z-index: 999;
+	.nav-links {
+		width: 100px;
+		display: flex;
+		align-items: center;
+		justify-self: center;
+		flex-direction: column;
+		.nav-link {
+			font-size: 30px;
+			margin: 20px 0;
+			opacity: 0.5;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

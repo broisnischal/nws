@@ -1,0 +1,34 @@
+// .scroll-indicator-container {
+// 	position: fixed;
+// 	top: 5%;
+// 	left: 10%;
+// 	overflow: hidden;
+// 	z-index: 999;
+// 	.scroll-indicator-box {
+// 		overflow: hidden;
+// 		position: relative;
+// 		// background: var(--primary-dark);
+// 		background: #eee;
+// 		border-radius: 20px;
+// 		width: 10px;
+// 		height: calc(100vh - 10vh);
+//
+// 		.indicator {
+// 			display: block;
+// 			position: absolute;
+// 			bottom: 0;
+//
+// 			width: 100%;
+// 			background: var(--accent-color);
+// 		}
+// 	}
+// }
+
+.scroll-indicator-container {
+	position: fixed;
+	.scroll-indicator-box {
+		img {
+			width: 30px;
+		}
+	}
+}
