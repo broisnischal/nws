@@ -25,7 +25,7 @@ function App() {
 				<BrowserRouter>
 					<Navbar />
 					{scrolled && <SecondaryNav />}
-					<ScrollIndicator />
+					{/* <ScrollIndicator /> */}
 					<Routes>
 						<Route path="/">
 							<Route index element={<Home />} />

@@ -15,19 +15,19 @@
 		}
 	}
 	.service-container {
-		height: 100%;
 		// max-width: 1000px;
-		min-width: 60vw;
+		min-width: 70vw;
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 		grid-column-gap: 40px;
 		grid-row-gap: 40px;
 		.service {
 			max-width: 450px;
+			height: 200px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			padding: 20px 50px;
+			padding: 40px 50px;
 			background: #fff;
 			border-radius: 9px;
 			color: var(--primary-dark);

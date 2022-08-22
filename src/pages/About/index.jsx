@@ -1,5 +1,6 @@
 import "./index.scss";
 import Hehe from "../../assets/imgs/hehe.png";
+import {Parallax} from "react-scroll-parallax";
 const About = () => {
 	return (
 		<section id="about" className="about-container">

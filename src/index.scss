@@ -61,8 +61,8 @@ button {
 }
 button:hover {
 	border-color: #646cff;
-	color: white;
 	background: transparent;
+	color: inherit;
 }
 button:focus,
 button:focus-visible {

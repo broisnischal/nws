@@ -1,5 +1,6 @@
 import "./index.scss";
 import Html from "../../assets/imgs/logo1.png";
+import JS from "../../assets/imgs/logo3.png";
 
 const Skills = () => {
 	return (
@@ -28,7 +29,11 @@ const Skills = () => {
 				</svg>
 			</div>
 			<div className="center">
-				<h1 className="title">I work on</h1>
+				<h1 className="title">I am Learning,</h1>
+				<div className="skill-container">
+
+
+				</div>
 			</div>
 		</section>
 	);

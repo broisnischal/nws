@@ -1,6 +1,7 @@
 import "./index.scss";
 import {Swiper, SwiperSlide, useSwiper} from "swiper/react";
 import "swiper/css";
+import {JackInTheBox} from "react-awesome-reveal";
 import {useState, useEffect} from "react";
 import {Parallax} from "react-scroll-parallax";
 const works = [
@@ -61,25 +62,27 @@ const Works = () => {
 			<div className="center">
 				<h1 className="title">Working with</h1>
 				<Parallax translateY={[40, -40]} speed={15}>
-					<Swiper
-						className="swiper"
-						spaceBetween={100}
-						slidesPerView={3}
-						onSlideChange={() => console.log("slide change")}
-						onSwiper={(swiper) => console.log(swiper)}
-					>
-						{works.map((item, index) => (
-							<SwiperSlide className="swipe" key={index}>
-								<div className="box">
-									<h3>{item.title}</h3>
-									{item.img && <img src={item.img} alt={item.title} />}
-									<p>{item.description}</p>
-									<h5> {item.date}</h5>
-								</div>
-							</SwiperSlide>
-						))}
-						<button onClick={() => swiper.slideNext()}>&gt;</button>
-					</Swiper>
+					<JackInTheBox triggerOnce delay={500}>
+						<Swiper
+							className="swiper"
+							spaceBetween={100}
+							slidesPerView={3}
+							onSlideChange={() => console.log("slide change")}
+							onSwiper={(swiper) => console.log(swiper)}
+						>
+							{works.map((item, index) => (
+								<SwiperSlide className="swipe" key={index}>
+									<div className="box">
+										<h3>{item.title}</h3>
+										{item.img && <img src={item.img} alt={item.title} />}
+										<p>{item.description}</p>
+										<h5> {item.date}</h5>
+									</div>
+								</SwiperSlide>
+							))}
+							<button onClick={() => swiper.slideNext()}>&gt;</button>
+						</Swiper>
+					</JackInTheBox>
 				</Parallax>
 			</div>
 		</section>
