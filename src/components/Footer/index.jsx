@@ -7,37 +7,37 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
-import CopyrightIcon from "@mui/icons-material/Copyright";
+// import CopyrightIcon from "@mui/icons-material/Copyright";
 import Quote from "../../assets/svgs/quote.svg";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
 import FavoriteOutlinedIcon from "@mui/icons-material/FavoriteOutlined";
-import { AddReaction } from "@mui/icons-material";
-const sociallinks = [
-  {
-    name: "facebook",
-    url: "https://facebook.com/techneesofficial17",
-  },
-  {
-    name: "twitter",
-    url: "https://twitter.com/neeswebservices",
-  },
-  {
-    name: "instagram",
-    url: "https://instagram.com/neeswebservices",
-  },
-  {
-    name: "youtube",
-    url: "https://www.youtube.com/channel/UCP013FdEq1ti7fz1y78v1eg",
-  },
-  {
-    name: "telegram",
-    url: "https://t.me/neeswebservices",
-  },
-  {
-    name: "github",
-    url: "https://github.com/neeswebservices",
-  },
-];
+// import { AddReaction } from "@mui/icons-material";
+// const sociallinks = [
+//   {
+//     name: "facebook",
+//     url: "https://facebook.com/techneesofficial17",
+//   },
+//   {
+//     name: "twitter",
+//     url: "https://twitter.com/neeswebservices",
+//   },
+//   {
+//     name: "instagram",
+//     url: "https://instagram.com/neeswebservices",
+//   },
+//   {
+//     name: "youtube",
+//     url: "https://www.youtube.com/channel/UCP013FdEq1ti7fz1y78v1eg",
+//   },
+//   {
+//     name: "telegram",
+//     url: "https://t.me/neeswebservices",
+//   },
+//   {
+//     name: "github",
+//     url: "https://github.com/neeswebservices",
+//   },
+// ];
 
 const Footer = () => {
   return (

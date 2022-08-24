@@ -4,10 +4,8 @@ import {
   faUser,
   faEnvelope,
   faSuitcase,
-  faBars,
-  faClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { NavLink, Link } from "react-router-dom";
+// import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSlack } from "@fortawesome/free-brands-svg-icons";
 import MiscellaneousServicesOutlinedIcon from "@mui/icons-material/MiscellaneousServicesOutlined";

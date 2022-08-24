@@ -1,12 +1,12 @@
 /* eslint-disable jsx-a11y/alt-text */
 
 import "./index.scss";
-import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
+import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { Zoom } from "react-awesome-reveal";
-import { useState, useEffect } from "react";
+// import { Zoom } from "react-awesome-reveal";
+// import { useState, useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
-import { Navigation, Pagination, Autoplay, Scrollbar } from "swiper";
+import { Navigation, Pagination, Autoplay } from "swiper";
 import "swiper/scss";
 import "swiper/scss/navigation";
 import "swiper/scss/pagination";
@@ -57,7 +57,7 @@ const works = [
 ];
 
 const Works = () => {
-  const swiper = useSwiper();
+  // const swiper = useSwiper();
   return (
     <section id="works" className="work-container">
       <div className="center">

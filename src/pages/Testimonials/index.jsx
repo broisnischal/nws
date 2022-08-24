@@ -3,7 +3,7 @@
 import "./index.scss";
 import Pattern from "../../assets/svgs/pattern.svg";
 import Line from "../../assets/svgs/line.svg";
-import Skill from "../../assets/svgs/skill.svg";
+// import Skill from "../../assets/svgs/skill.svg";
 import { Parallax } from "react-scroll-parallax";
 import { Zoom } from "react-awesome-reveal";
 

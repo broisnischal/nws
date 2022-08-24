@@ -1,6 +1,6 @@
 import "./index.scss";
-import Html from "../../assets/imgs/logo1.png";
-import JS from "../../assets/imgs/logo3.png";
+// import Html from "../../assets/imgs/logo1.png";
+// import JS from "../../assets/imgs/logo3.png";
 import SingleSkill from "../../components/SingleSkill";
 
 const skill = [

@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useRef, useState, useEffect } from "react";
 import { useInView, InView } from "react-intersection-observer";
 

@@ -12,21 +12,21 @@ import ReactJsAlert from "reactjs-alert";
 // import { Icon } from "leaflet";
 // import "leaflet/dist/leaflet.css";
 
-import {
-  MapContainer,
-  Map,
-  TileLayer,
-  Marker,
-  Popup as Mappopup,
-  GeoJSON,
-} from "react-leaflet";
+// import {
+//   MapContainer,
+//   Map,
+//   TileLayer,
+//   Marker,
+//   Popup as Mappopup,
+//   GeoJSON,
+// } from "react-leaflet";
 
 const Contact = () => {
-  const position = [51.505, -0.09];
+  // const position = [51.505, -0.09];
   const [tookoff, setTookOff] = useState(false);
   const [loading, setLoading] = useState(false);
   const formref = useRef();
-  const alertref = useRef();
+  // const alertref = useRef();
   const { ref, inView } = useInView({
     threshold: 0,
   });

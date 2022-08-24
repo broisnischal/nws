@@ -1,7 +1,7 @@
 import "./index.scss";
-import Gamedev from "../../assets/imgs/icons/gamedev.png";
-import Modling from "../../assets/imgs/icons/3dmodling.png";
-import Digital from "../../assets/imgs/icons/digital.png";
+// import Gamedev from "../../assets/imgs/icons/gamedev.png";
+// import Modling from "../../assets/imgs/icons/3dmodling.png";
+// import Digital from "../../assets/imgs/icons/digital.png";
 import { Fade } from "react-awesome-reveal";
 
 const service = [

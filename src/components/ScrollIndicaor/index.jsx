@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import "./index.scss";
-import Housefly from "../../assets/imgs/gifs/Housefly.gif";
+// import Housefly from "../../assets/imgs/gifs/Housefly.gif";
 
 const ScrollIndicator = () => {
   const [scrollTop, setScrollTop] = useState(0);
   const [bottom, setBottom] = useState(false);
-  const fly = useRef();
+  // const fly = useRef();
 
   const onscroll = () => {
     const winscroll = document.documentElement.scrollTop;

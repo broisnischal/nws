@@ -9,7 +9,7 @@ import {
   faBars,
   faClose,
 } from "@fortawesome/free-solid-svg-icons";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBandcamp } from "@fortawesome/free-brands-svg-icons";
 import { useRef, useState } from "react";
@@ -21,9 +21,9 @@ const Navbar = () => {
   const toggleNav = () => {
     setOpen((prev) => !prev);
   };
-  const activeStyle = {
-    color: "#4d4d4e",
-  };
+  // const activeStyle = {
+  //   color: "#4d4d4e",
+  // };
   return (
     <nav ref={navref}>
       <div className="center">

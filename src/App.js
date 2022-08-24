@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { useEffect, useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import ScrollIndicator from "./components/ScrollIndicaor";
+// import ScrollIndicator from "./components/ScrollIndicaor";
 import SecondaryNav from "./components/SecondaryNav";
 import { ParallaxProvider } from "react-scroll-parallax";
 import NoMatch from "./Redirect";

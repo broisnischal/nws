@@ -1,13 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import About from "../About";
 import Skills from "../skills";
 import Works from "../Works";
 import Service from "../Services";
 import Contact from "../Contact";
-import { Bounce, Fade } from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
 import Views from "../Views";
 import Projects from "../Project";
 import Testimonial from "../Testimonials";
