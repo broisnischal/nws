@@ -8,6 +8,7 @@ import "reactjs-popup/dist/index.css";
 import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 import ReactJsAlert from "reactjs-alert";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
 import {
   MapContainer,
@@ -181,7 +182,7 @@ const Contact = () => {
               <Marker
                 icon={
                   new Icon({
-                    iconUrl: Icon,
+                    iconUrl: markerIconPng,
                     iconSize: [25, 41],
                     iconAnchor: [12, 41],
                   })
