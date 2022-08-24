@@ -4,13 +4,13 @@ import Rocket from "../../assets/imgs/rocket.png";
 import { useInView, InView } from "react-intersection-observer";
 import { useState, useRef, useEffect } from "react";
 import Finger from "../../assets/svgs/finger.svg";
-import "reactjs-popup/dist/index.css";
-import Popup from "reactjs-popup";
+// import "reactjs-popup/dist/index.css";
+// import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 import ReactJsAlert from "reactjs-alert";
-import markerIconPng from "leaflet/dist/images/marker-icon.png";
-import { Icon } from "leaflet";
-import "leaflet/dist/leaflet.css";
+// import markerIconPng from "leaflet/dist/images/marker-icon.png";
+// import { Icon } from "leaflet";
+// import "leaflet/dist/leaflet.css";
 
 import {
   MapContainer,
