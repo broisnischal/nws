@@ -1,30 +1,218 @@
 .contact-container {
-	min-height: 100vh;
-	position: relative;
+  min-height: 80vh;
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: white;
+  position: relative;
+
+  .rocket {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    bottom: 20px;
+    left: 100px;
+    z-index: 999;
+    position: absolute;
+    display: inline-block;
+    transform: translate(100px, -70px);
+    .rocketself {
+      width: 100px;
+    }
+  }
+
+  .top {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    position: absolute;
+    width: min(90%, 1100px);
+    background: var(--primary-dark);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    padding: min(2em) 1em;
+    border-radius: 9px;
+    .left {
+      display: grid;
+      place-items: center;
+      h4 {
+        text-align: center;
+      }
+    }
+    .center {
+      p {
+        margin: auto;
+        text-align: center;
+        width: 59%;
+      }
+    }
+    .right {
+      button {
+        color: white;
+        display: flex;
+        background: #434343;
+        &:hover {
+          background: transparent;
+        }
+        img {
+          width: 20px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+  .box-center {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    width: min(90%, 1400px);
+    h1 {
+      margin: 50px auto 100px auto;
+      text-align: center;
+    }
+    .box {
+      display: flex;
+      background-image: url("../../assets/svgs/pattern.svg");
+      background-repeat: no-repeat;
+      min-height: 50vh;
+      background-position: top right;
+      color: #141414;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .left {
+        flex: 1;
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          // flex: 1 1 auto;
+          flex-wrap: wrap;
+          .form-group {
+            width: min(90%, 800px);
+            margin: min(3vh, 1rem) auto;
+            input,
+            textarea {
+              padding: 15px;
+              display: inline-block;
+              width: 100%;
+              border: none;
+              outline: none;
+              color: black;
+              background: white;
+              border: 1px solid #141414;
+              font-size: 20px;
+            }
+            input[type="submit"] {
+              cursor: pointer;
+              &:hover {
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                  rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+              }
+            }
+
+            textarea {
+              resize: vertical;
+              min-height: 15rem;
+              max-height: 30rem;
+            }
+          }
+        }
+      }
+      .map-container {
+        flex: 1;
+        .find-title {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+input:invalid {
+  // background: red;
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+}
+.animate-rocket {
+  animation: flying 5s;
 }
 
-.pattern {
-	position: absolute;
-	width: 400px;
-	top: 30%;
-	right: 10%;
+@keyframes flying {
+  0% {
+    transform: scale(0.75) rotate(10deg);
+  }
+  5% {
+    transform: scale(1) rotate(-15deg);
+  }
+
+  10% {
+    transform: scale(1.5) rotate(5deg);
+  }
+
+  15% {
+    transform: scale(1.75) rotate(-10deg);
+  }
+
+  20% {
+    transform: scale(2) rotate(0deg);
+  }
+
+  100% {
+    transform: scale(10) translate3d(100vw, -100vh, 0) rotate(0);
+  }
 }
 
-.bg {
-	z-index: -1;
-	pointer-events: none;
+@media screen and (max-width: 1200px) {
+  .contact-container {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .top {
+      flex-direction: column;
+      top: -100px;
+      .center {
+        width: 100%;
+        p {
+          width: 100%;
+          margin: max(3vh, 1rem) auto;
+        }
+      }
+    }
+    .box-center {
+      h1 {
+        font-size: 40px;
+        margin-top: 100px;
+        margin-bottom: 20px;
+      }
+    }
+  }
 }
 
-.line {
-	position: absolute;
-	width: 300px;
-	top: 70%;
-	left: 10%;
-}
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
 
-.skill {
-	position: absolute;
-	width: 300px;
-	top: 50%;
-	left: 50%;
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

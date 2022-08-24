@@ -1,65 +1,77 @@
+/* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
 import About from "../About";
 import Skills from "../skills";
 import Works from "../Works";
 import Service from "../Services";
 import Contact from "../Contact";
-import {Bounce} from "react-awesome-reveal";
+import { Bounce, Fade } from "react-awesome-reveal";
+import Views from "../Views";
+import Projects from "../Project";
+import Testimonial from "../Testimonials";
+import Blog from "../Blog";
+import Footer from "../../components/Footer";
 
 const Home = () => {
-	const [offsetY, setOffsetY] = useState(0);
+  const [loaded, setLoaded] = useState(false);
+  const src = "https://avatars.githubusercontent.com/u/98168009?v=4";
 
-	const handleScroll = () => setOffsetY(window.pageYOffset);
-
-	useEffect(() => {
-		window.addEventListener("scroll", handleScroll);
-		return () => {
-			window.removeEventListener("scroll", handleScroll);
-		};
-	}, []);
-
-	return (
-		<div className="parent">
-			<section id="home" className="home-container">
-				<Bounce>
-					<div
-						className="center"
-						style={{transform: `translateY(${offsetY * 0.6}px)`}}
-					>
-						<img
-							src="https://avatars.githubusercontent.com/u/98168009?v=4"
-							alt="neeschal
-                "
-						/>
-						<div className="details">
-							<span className="info ">&lt;info&gt;</span>
-							<h4>Hi, I'm</h4>
-							<h1>
-								<span className="fname">Nischal</span> Dahal
-							</h1>
-							<h4 className="highlights "> PROGRAMMER | EDITOR | DESIGNER </h4>
-							<p className="">
-								I'm a computer engineer based Biratnagar, Nepal who specializes
-								in building (and occasionally designing) exceptional digital
-								experiences. Currently, I'm learning at Purbanchal University
-								and focused on building accessible, human-centered products.
-								<span className="info">&lt;/info&gt;</span>
-							</p>
-							<button>Let's work together!</button>
-						</div>
-					</div>
-				</Bounce>
-			</section>
-
-			<About />
-			<Skills />
-			<Works />
-			<Service />
-			<Contact />
-		</div>
-	);
+  return (
+    <div className="parent">
+      {/* <Parallax translateY={-40} speed={10}> */}
+      <section id="home" className="home-container">
+        <Bounce damping={20} style={{ scrollBehavior: "smooth" }} delay={500}>
+          <div className="center">
+            <div className="img" style={{ transition: "all .7s ease-in-out" }}>
+              {loaded ? null : <div className="loading-shimmer" />}
+              <img
+                className="home-img"
+                src={src}
+                onLoad={() => setLoaded(true)}
+                style={loaded ? {} : { display: "none" }}
+              />
+            </div>
+            <div className="details">
+              <span className="info ">&lt;info&gt;</span>
+              <h4>Hello, I'm</h4>
+              <h1>
+                <span className="fname">Nischal</span> Dahal
+              </h1>
+              <h4>A simple guy who think's about everyone's death. </h4>
+              <h4 className="highlights ">
+                {" "}
+                PROGRAMMER | EDITOR | DESIGNER | JavaScript Expert{" "}
+              </h4>
+              <p className="">
+                A creative 0️⃣ from Nepal who is trying to become !0️⃣. Just
+                kidding, hello if you are <span className="focus">reading</span>{" "}
+                this which i know you are,Then my name is Nischal Dahal and A
+                big <span className="focus">applaud</span>👏 for you that you
+                landed here in my portfolio. Here you will know about me, that
+                even I don't know what to write so lorem500🤣. Go through bottom
+                sections with smooth scrolling to Deep dive into 🌊.
+                <span className="info end">&lt;/info&gt;</span>
+              </p>
+              <button className="btn-disabled">Let's work together!</button>
+            </div>
+          </div>
+        </Bounce>
+      </section>
+      {/* </Parallax> */}
+      <About />
+      <Skills />
+      <Works />
+      <Service />
+      <Views />
+      <Projects />
+      <Blog />
+      <Testimonial />
+      <Contact />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;

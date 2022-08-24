@@ -1,34 +1,73 @@
+.scroll-indicator-container {
+  position: fixed;
+  top: 50%;
+  right: 2%;
+  transform: translate(-98%, -50%);
+  overflow: hidden;
+  z-index: 999;
+  visibility: hidden;
+  pointer-events: none;
+  .scroll-indicator-box {
+    overflow: hidden;
+    position: relative;
+    // background: var(--primary-dark);
+    background: rgb(176, 176, 176);
+    border-radius: 20px;
+    width: 3px;
+    height: calc(100vh - 40vh);
+    .indicator {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      // background: var(--accent-color);
+      background: #6f75f2;
+    }
+  }
+}
+
+.bottom {
+  transition: all 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+  visibility: visible;
+}
+
 // .scroll-indicator-container {
 // 	position: fixed;
-// 	top: 5%;
-// 	left: 10%;
-// 	overflow: hidden;
-// 	z-index: 999;
 // 	.scroll-indicator-box {
-// 		overflow: hidden;
-// 		position: relative;
-// 		// background: var(--primary-dark);
-// 		background: #eee;
-// 		border-radius: 20px;
-// 		width: 10px;
-// 		height: calc(100vh - 10vh);
-//
-// 		.indicator {
-// 			display: block;
-// 			position: absolute;
-// 			bottom: 0;
-//
-// 			width: 100%;
-// 			background: var(--accent-color);
+// 		img {
+// 			width: 30px;
 // 		}
 // 	}
 // }
 
-.scroll-indicator-container {
-	position: fixed;
-	.scroll-indicator-box {
-		img {
-			width: 30px;
-		}
-	}
+@media screen and (max-width: 1200px) {
+  .scroll-indicator-container {
+    position: fixed;
+    top: calc(100% - 90%);
+    left: 0%;
+    transform: translate(-100%, 99%);
+    transform: rotate(90deg);
+    overflow: hidden;
+    z-index: 999;
+    visibility: hidden;
+    display: none;
+    pointer-events: none;
+    position: sticky;
+    width: 100%;
+    .scroll-indicator-box {
+      overflow: hidden;
+      position: relative;
+      background: rgb(204, 204, 204);
+      border-radius: 20px;
+      width: 7px;
+      height: calc(100vh - 50vh);
+      .indicator {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background: var(--accent-color);
+      }
+    }
+  }
 }

@@ -1,141 +1,155 @@
 nav {
-	width: 100%;
-	z-index: 99;
+  width: 100%;
+  z-index: 99;
+  transition: all 0.3s ease-in-out;
 
-	.center {
-		max-width: 1024px;
-		display: flex;
-		margin: auto;
-		align-items: center;
-		justify-content: space-between;
-		padding: 20px 0;
-		height: 10vh;
-		color: white;
-		.logo {
-			font-size: 30px;
-			font-weight: 900;
-			letter-spacing: 1px;
-			cursor: pointer;
-			color: #646cff;
-			padding: 0 20px;
-			&:hover {
-				color: #333;
-				transition: 0.4s ease;
-			}
-		}
-		.nav-links {
-			display: flex;
+  .center {
+    max-width: 1024px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    height: 10vh;
+    color: white;
+    .logo {
+      font-size: 30px;
+      font-weight: 900;
+      letter-spacing: 1px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 25px;
+      }
+      cursor: pointer;
+      color: #646cff;
+      padding: 0 20px;
+      &:hover {
+        color: #333;
+        transition: 0.4s ease;
+      }
+    }
+    .nav-links {
+      display: flex;
 
-			.nav-link {
-				width: 100px;
-				position: relative;
-				margin: 0 5px;
-				padding: 5px 20px;
-				transition: all 0.3s ease;
-				text-align: center;
-				&:hover span {
-					display: block;
-					position: absolute;
-					top: 50%;
-					left: 50%;
-					transform: translate(-50%, -50%);
-					font-size: 16px;
-					transition: all 0.3s ease-in-out;
-				}
-				&:hover .nav-icon {
-					display: none;
-					transition: all 0.3s ease-in-out;
-				}
-				.nav-icon {
-					&:hover {
-						transition: all 0.3s ease-in-out;
-						color: #646cff;
-					}
-					transition: all 0.3s ease;
-					margin-right: 5px;
-					font-size: 20px;
-				}
-				span {
-					transition: all 0.3s ease-in-out;
-					display: none;
-				}
-			}
-		}
-		.toggle {
-			display: none;
-		}
-	}
+      .nav-link {
+        width: 100px;
+        position: relative;
+        margin: 0 5px;
+        padding: 5px 20px;
+        transition: all 0.3s ease;
+        text-align: center;
+        &:hover span {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 16px;
+          transition: all 0.3s ease-in-out;
+        }
+        &:hover .nav-icon {
+          display: none;
+          transition: all 0.3s ease-in-out;
+        }
+        .nav-icon {
+          &:hover {
+            transition: all 0.3s ease-in-out;
+            color: #646cff;
+          }
+          transition: all 0.3s ease;
+          margin-right: 5px;
+          font-size: 20px;
+        }
+        span {
+          transition: all 0.3s ease-in-out;
+          display: none;
+          cursor: pointer !important;
+        }
+      }
+    }
+    .toggle {
+      display: none;
+    }
+  }
 }
 
 @media screen and (max-width: 1024px) {
-	nav {
-		top: 0;
-		position: sticky;
-		background: #161616;
-		color: white;
+  nav {
+    position: fixed;
+    position: -webkit-fixed; /* for safari */
+    z-index: 999;
+    top: -1px;
+    background: #161616;
+    color: white;
 
-		.center {
-			.toggle {
-				display: block;
-				z-index: 100;
-				.close {
-					display: none;
-				}
-				.bars {
-					margin: 0 15px;
-				}
-			}
-			.nav-links {
-				position: fixed;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				background: #161616;
-				padding: 15px 0;
-				z-index: 99;
-				bottom: 0;
+    .center {
+      .toggle {
+        display: block;
+        z-index: 100;
+        .close {
+          display: none;
+        }
+        .bars {
+          margin: 0 15px;
+        }
+      }
+      .nav-links {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #161616;
+        padding: 15px 0;
+        z-index: 99;
+        bottom: 0;
+        width: 100%;
+        .nav-link {
+          .nav-icon {
+            color: white;
+          }
+          &:hover .nav-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            transition: all 0.3s ease-in-out;
+          }
+          &:hover span {
+            display: none;
+          }
+          span {
+            display: none;
+          }
+          padding: 10px 0;
+          flex: 1;
+          &:nth-of-type(1) {
+            flex: 1;
+          }
+          &:nth-of-type(2) {
+            flex: 1;
+          }
+          &:nth-of-type(3) {
+            flex: 1;
+          }
+          &:nth-of-type(4) {
+            flex: 1;
+          }
+          .nav-icon {
+            font-size: 20px;
+          }
+        }
+      }
 
-				width: 100%;
-				.nav-link {
-					.nav-icon {
-						color: white;
-					}
-					&:hover .nav-icon {
-						display: flex;
-						align-items: center;
-						justify-content: center;
-						width: 100%;
-						transition: all 0.3s ease-in-out;
-					}
-					&:hover span {
-						display: none;
-					}
-					span {
-						display: none;
-					}
-					padding: 10px 0;
-					flex: 1;
-					&:nth-of-type(1) {
-						flex: 1;
-					}
-					&:nth-of-type(2) {
-						flex: 1;
-					}
-					&:nth-of-type(3) {
-						flex: 1;
-					}
-					&:nth-of-type(4) {
-						flex: 1;
-					}
-					.nav-icon {
-						font-size: 20px;
-					}
-				}
-			}
-		}
-	}
+      .hide {
+        transition: all 0.3s ease-in-out;
+        display: none;
+      }
+    }
+  }
 }
 
 .active {
-	color: #646cff;
+  color: #646cff;
 }

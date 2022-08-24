@@ -1,0 +1,18 @@
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  h1 {
+    font-size: clamp(15rem, 5vw, 5rem);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .error {
+    h1 {
+      font-size: 120px;
+      font-weight: 800;
+    }
+  }
+}

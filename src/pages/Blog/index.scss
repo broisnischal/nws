@@ -1,0 +1,29 @@
+.blog-container {
+  min-height: 60vh;
+  background: var(--primary-dark);
+  color: #eee;
+  display: flex;
+  align-items: center;
+  background-image: url("../../assets/svgs/Items.svg");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-size: 40vw;
+  justify-content: center;
+  .title {
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-align: center;
+    transform: translateY(-100px);
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .blog-container {
+    min-height: calc(100vh - 30vh);
+    background-size: 100vw;
+    .title {
+      font-size: 40px;
+      transform: translateY(-50px);
+    }
+  }
+}

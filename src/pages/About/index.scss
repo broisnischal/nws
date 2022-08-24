@@ -1,48 +1,91 @@
 .about-container {
-	background: rgb(22, 22, 22);
-	color: white;
-	min-height: 110vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	.center {
-		.title {
-			text-align: center;
-		}
+  background: rgb(22, 22, 22);
+  color: white;
+  min-height: 110vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  // .arrow {
+  //   position: absolute;
+  //   top: -50px;
+  //   left: 20%;
+  //   transform: rotate(45deg);
+  //   width: 100px;
+  //   height: 100px;
+  //   background: #f6f5f5;
+  //   // z-index: -1;
+  // }
+  .center {
+    .title {
+      text-align: center;
+    }
 
-		.flex {
-			display: flex;
-			align-items: center;
-			justify-content: space-evenly;
-			max-width: 1100px;
-			padding: 20px 0;
-			.image {
-				margin-right: 30px;
-				padding: 20px;
-				flex: 1;
-				width: 100%;
-				img {
-					border-radius: 53% 47% 54% 46% / 48% 36% 64% 52%;
-					// border: 2px solid white;
-					padding: 5px;
-					box-shadow: 1px 1px 1px 1px white, 3px 3px 0px 0px #646cff;
-				}
-			}
-			.content {
-				flex: 2;
-				.highlight {
-					font-size: 30px;
-					line-height: normal;
-					font-family: Aurore;
-				}
-				.details {
-					text-align: justify;
-					letter-spacing: 0.5px;
-				}
-				.hire {
-					margin-right: 30px;
-				}
-			}
-		}
-	}
+    .flex {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      max-width: 1100px;
+      padding: 20px 0;
+      .image {
+        margin-right: 30px;
+        padding: 20px;
+        flex: 1;
+        width: 100%;
+        img {
+          border-radius: 53% 47% 54% 46% / 48% 36% 64% 52%;
+          // border: 2px solid white;
+          padding: 5px;
+          box-shadow: 1px 1px 1px 1px white, 3px 3px 0px 0px #646cff;
+        }
+      }
+      background-image: url("../../assets/svgs/dotted.svg"),
+        url("../../assets/svgs/dotted.svg");
+      background-repeat: no-repeat;
+      background-size: 12vw, 7vw;
+      background-position: top left, bottom right;
+      .content {
+        flex: 2;
+        .highlight {
+          font-size: 30px;
+          line-height: normal;
+          font-family: Aurore;
+        }
+        .details {
+          text-align: justify;
+          letter-spacing: 0.5px;
+        }
+        .hire {
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .about-container {
+    padding: 100px 20px;
+    .center {
+      .flex {
+        background-size: 200px, 200px;
+        background-position: top left, 200px 160px;
+        flex-direction: column;
+        .content {
+          .highlight {
+            font-size: 20px;
+            line-height: normal;
+            font-family: Aurore;
+          }
+          .details {
+            text-align: justify;
+            margin: 20px auto;
+          }
+          .hire {
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
 }
