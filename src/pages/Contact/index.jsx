@@ -20,7 +20,6 @@ import {
   Popup as Mappopup,
   GeoJSON,
 } from "react-leaflet";
-import "leaflet/dist/leaflet.css";
 
 const Contact = () => {
   const position = [51.505, -0.09];
