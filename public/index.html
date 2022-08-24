@@ -44,7 +44,9 @@
         margin: 0;
         padding: 0;
       }
-
+      #root {
+        display: none;
+      }
       #pre-loader {
         height: 100vh;
         width: 100vw;
@@ -146,7 +148,7 @@
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
     ></script>
-    <script type="text/javascript">
+    <script type="text/javascript" defer>
       (function () {
         emailjs.init("4lKiWbQE9A-exlTZVXFGq");
       })();
@@ -154,22 +156,28 @@
   </head>
 
   <body>
-    <div id="root">
-      <div id="pre-loader">
-        <div class="lds-roller">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-        </div>
+    <div id="pre-loader">
+      <div class="lds-roller">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
-      <!-- <div id="pre-loader">
-        <img src="./preloader.gif" />
-      </div> -->
     </div>
+    <div id="root"></div>
+    <script type="text/javascript">
+      const loader = document.getElementById("pre-loader");
+      const root = document.getElementById("root");
+
+      window.onload = function () {
+        root.style.display = "block";
+        loader.style.transition = "all 1s ease";
+        loader.style.display = "none";
+      };
+    </script>
   </body>
 </html>

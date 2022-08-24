@@ -10,6 +10,8 @@ import emailjs from "@emailjs/browser";
 import ReactJsAlert from "reactjs-alert";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { Icon } from "leaflet";
+import "leaflet/dist/leaflet.css";
+
 import {
   MapContainer,
   Map,
@@ -164,7 +166,7 @@ const Contact = () => {
             title={title}
             Close={() => setStatus(false)}
           />
-          <div className="map-container">
+          {/* <div className="map-container">
             <h1 className="find-title">
               Find us{" "}
               <div className="highlight">&lt;Kathmandu,Koteshwor&gt;</div>
@@ -173,7 +175,8 @@ const Contact = () => {
               center={[27.6756, 85.3459]}
               zoom={14}
               scrollWheelZoom={false}
-              minZoom={10}
+              minZoom={6}
+              dragging={false}
             >
               <TileLayer
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -196,7 +199,7 @@ const Contact = () => {
                 </Mappopup>
               </Marker>
             </MapContainer>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

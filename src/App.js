@@ -9,6 +9,8 @@ import { ParallaxProvider } from "react-scroll-parallax";
 import NoMatch from "./Redirect";
 import HorizontalIndicator from "./components/HorizontalIndicator";
 import BottomAlert from "./components/BottomMsg";
+import Loader from "react-loaders";
+
 function App() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -42,6 +44,7 @@ function App() {
       </ParallaxProvider>
 
       <BottomAlert />
+      {/* <Loader type="line-scale" /> */}
     </>
   );
 }
