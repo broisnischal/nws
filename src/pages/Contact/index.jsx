@@ -8,18 +8,16 @@ import Finger from "../../assets/svgs/finger.svg";
 // import Popup from "reactjs-popup";
 import emailjs from "@emailjs/browser";
 import ReactJsAlert from "reactjs-alert";
-// import markerIconPng from "leaflet/dist/images/marker-icon.png";
-// import { Icon } from "leaflet";
-// import "leaflet/dist/leaflet.css";
+import markerIconPng from "leaflet/dist/images/marker-icon.png";
+import { Icon } from "leaflet";
+import "leaflet/dist/leaflet.css";
 
-// import {
-//   MapContainer,
-//   Map,
-//   TileLayer,
-//   Marker,
-//   Popup as Mappopup,
-//   GeoJSON,
-// } from "react-leaflet";
+import {
+  MapContainer,
+  TileLayer,
+  Marker,
+  Popup as Mappopup,
+} from "react-leaflet";
 
 const Contact = () => {
   // const position = [51.505, -0.09];
@@ -166,7 +164,7 @@ const Contact = () => {
             title={title}
             Close={() => setStatus(false)}
           />
-          {/* <div className="map-container">
+          <div className="map-container">
             <h1 className="find-title">
               Find us{" "}
               <div className="highlight">&lt;Kathmandu,Koteshwor&gt;</div>
@@ -199,7 +197,7 @@ const Contact = () => {
                 </Mappopup>
               </Marker>
             </MapContainer>
-          </div> */}
+          </div>
         </div>
       </div>
     </section>
