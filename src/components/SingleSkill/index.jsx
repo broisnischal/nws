@@ -1,7 +1,7 @@
 import "./index.scss";
 import { useInView } from "react-intersection-observer";
 import { useEffect, useRef } from "react";
-import AnimatedNumber from "react-animated-number";
+// import AnimatedNumber from "react-animated-number";
 
 const SingleSkill = ({ title, percentage, color }) => {
   const iref = useRef();

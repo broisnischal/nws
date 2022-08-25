@@ -26,7 +26,7 @@ const About = () => {
                   />
                 )}
                 <img
-                  src={Hehe}
+                  src="https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412469/icons/hehe_1_11zon_vtgvk0.png"
                   onLoad={() => setLoaded(true)}
                   style={loaded ? {} : { display: "none" }}
                 />

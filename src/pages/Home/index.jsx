@@ -16,7 +16,8 @@ import Footer from "../../components/Footer";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
-  const src = "https://avatars.githubusercontent.com/u/98168009?v=4";
+  const src =
+    "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412465/icons/pp_2_11zon_sn5bhi.png";
 
   return (
     <div className="parent">
