@@ -112,7 +112,7 @@ const Skills = () => {
         <h1 className="title">
           I am <span className="focus">Learning</span>,
           <div className="highlight">
-            I Develop Skills Regularly to Keep Me Updated
+            I use phone all day just to develop skills.
           </div>
         </h1>
         <div className="skill-container">

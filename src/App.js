@@ -42,7 +42,7 @@ function App() {
         </BrowserRouter>
       </ParallaxProvider>
 
-      <BottomAlert />
+      {/* <BottomAlert /> */}
       {/* <Loader type="line-scale" /> */}
     </>
   );

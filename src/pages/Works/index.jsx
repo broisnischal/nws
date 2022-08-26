@@ -36,7 +36,7 @@ const works = [
   {
     title: "Technical Vandar",
     description:
-      "Workink as a video editor and content creator with all the effort and love.",
+      "Working as a video editor and content creator with all the effort and love.",
     img: "",
     date: "aug 2021 to present",
   },
@@ -61,7 +61,10 @@ const Works = () => {
   return (
     <section id="works" className="work-container">
       <div className="center">
-        <h1 className="title">Working with</h1>
+        <h1 className="title">
+          Working with{" "}
+          <div className="highlight">Experiences and Highlights</div>{" "}
+        </h1>
         <Parallax translateY={[40, -40]} speed={15}>
           <Swiper
             modules={[Navigation, Pagination, Autoplay]}

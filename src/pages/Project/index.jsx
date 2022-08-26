@@ -9,21 +9,20 @@ const projects = [
     desc: "A project to display the air pollution index of all over the cities and district of Nepal.",
   },
   {
-    title: "QR code Generator",
-    url: "https://neeswebservices.github.io/js-qrcode/",
-    img: "https://creativeplasticcards.com.au/wp-content/uploads/2020/04/QR-Code.png",
-    desc: "It creates the qr code as that you provide the input the input to it and you can share.",
+    title: "MeroRoom",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661524006/icons/merowallpaper_dg3kzr.png",
+    desc: "A digital platform to book the room all over nepal. | Underdevelopment",
   },
   {
-    title: "Bat obfuscator",
-    url: "https://neeswebservices.github.io/bat-obfuscator/",
-    img: "",
-    desc: "It is the project for obfuscatoring your bat code so no one can read with clean eyes.",
+    title: "RONT | ADMIN",
+    url: "https://github.com/neeswebservices/rontflutterchat/releases/tag/nees",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661524806/icons/Screenshot_43_p0uj7l.png",
+    desc: "A chat application for the member of team Routine of Nepal Technology.",
   },
   {
     title: "Your Clipboard",
     url: "https://github.com/neeswebservices/yourownclipboard/releases/tag/neesbinclip",
-    img: "https://www.dignited.com/wp-content/uploads/2020/03/Windows-10-Clipboard-History-featured-image-1024x576.jpg",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661521829/icons/projects/Screenshot_42_wporsa.png",
     desc: "This is the desktop application available for window which is use as clipboard.",
   },
   {
@@ -36,7 +35,7 @@ const projects = [
     title: "Premier Class Zoom APP",
     url: "https://premierroutineapi.herokuapp.com/",
     img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661178220/icons/Screenshot_32_wdzn0i.png",
-    desc: "Premier college application to join the zoom online meeting for the class.",
+    desc: "Premier college application to join the zoom online meeting for the class. | Deps",
   },
 ];
 

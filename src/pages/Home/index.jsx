@@ -46,13 +46,15 @@ const Home = () => {
                 PROGRAMMER | EDITOR | DESIGNER | JavaScript Expert{" "}
               </h4>
               <p className="">
-                A creative 0️⃣ from Nepal who is trying to become !0️⃣. Just
+                A creative <span className="emoji">0️⃣</span> from Nepal who is
+                trying to become <span className="emoji">!0️⃣</span>. Just
                 kidding, hello if you are <span className="focus">reading</span>{" "}
                 this which i know you are,Then my name is Nischal Dahal and A
                 big <span className="focus">applaud</span>👏 for you that you
                 landed here in my portfolio. Here you will know about me, that
                 even I don't know what to write so lorem500🤣. Go through bottom
-                sections with smooth scrolling to Deep dive into 🌊.
+                sections with smooth scrolling to Deep dive into{" "}
+                <span className="emoji">🌊</span>.
                 <span className="info end">&lt;/info&gt;</span>
               </p>
               <button className="btn-disabled">Let's work together!</button>

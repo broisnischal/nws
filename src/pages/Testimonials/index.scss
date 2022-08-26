@@ -9,7 +9,7 @@
   .center {
     .title {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 100px;
     }
     .content-div {
       width: 80vw;
@@ -18,9 +18,17 @@
       grid-row-gap: 20px;
       grid-column-gap: 20px;
       place-items: center;
+
       .testmonial {
         position: relative;
-        width: 400px;
+        width: min(500px, 90%);
+
+        &:hover img {
+          transition: all 0.3s ease;
+
+          border-radius: 0%;
+        }
+
         img {
           width: 100px;
           height: 100px;
@@ -28,6 +36,7 @@
           border: 5px solid #f6f5f5;
           position: absolute;
           top: -20%;
+          object-fit: cover;
           left: 50%;
           transform: translate(50%, 20%);
         }
@@ -77,7 +86,7 @@
   width: 200px;
   top: 80%;
   left: 10%;
-  animation: lrt 3s infinite alternate ease-in-out;
+  animation: sync 3s infinite alternate ease-in-out;
 }
 
 @keyframes sync {

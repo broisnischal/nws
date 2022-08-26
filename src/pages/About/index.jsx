@@ -38,13 +38,14 @@ const About = () => {
               He the, Designer, Programmer, editor, and tech lover.
             </div>
             <p className="details">
-              Hey you 🚀, Great ! that you made it here , So now let's find me
-              more, I'm tech enthusiast and night dreamer.I am BlackCat who is
-              willing to learn everything possible aslo,I am a{" "}
-              <span className="focus">Full</span> Stack Developer, I mean Pull
-              stack who <span className="focus">pulls</span> code from Github
-              and Stackoverflow,Hehe Jokes a margin-left&lg;side&gt;. Now let's
-              know what i doing?.WebDev,AppDev,GameDev,3d Modeling,Graphic
+              Hey you <span className="emoji rocket">🚀</span>, Great ! that you
+              made it here , So now let's find me more, I'm tech enthusiast and
+              night dreamer.I am BlackCat who is willing to learn everything
+              possible also,I am a <span className="focus">Full</span> Stack
+              Developer, I mean Pull stack who{" "}
+              <span className="focus">pulls</span> code from Github and
+              Stackoverflow ,Hehe Jokes a margin-left&lt;side&gt;. Now let's
+              know what do i do?. WebDev,AppDev,GameDev,3d Modeling,Graphic
               Designing & also, I mentioned me as a BlackCat so, I am also
               learning hacking atleast somehow.I mean to alert("Hecked NASA").
               <br /> <br />I am Window Lover.I search for free courses on udemy.
@@ -61,7 +62,8 @@ const About = () => {
               coding and above mentioned Tech Stuffs. Being a{" "}
               <span className="focus">FireFly</span> I am able to learn{" "}
               <span className="focus">Few</span> things but lot's ideas and
-              creativeness. Yaaa this much for the about me &lt;Section /&gt; 🔥
+              creativeness. Yaaa this much for the about me &lt;Section /&gt;{" "}
+              <span className="emoji">🔥</span>
             </p>
 
             {/* <button className="btn-primary hire">Hire Me</button> */}
