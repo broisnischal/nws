@@ -8,7 +8,7 @@ import SecondaryNav from "./components/SecondaryNav";
 import { ParallaxProvider } from "react-scroll-parallax";
 import NoMatch from "./Redirect";
 import HorizontalIndicator from "./components/HorizontalIndicator";
-import BottomAlert from "./components/BottomMsg";
+// import BottomAlert from "./components/BottomMsg";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);

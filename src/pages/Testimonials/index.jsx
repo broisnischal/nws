@@ -75,7 +75,7 @@ const Testimonial = () => {
                 <div className="testmonial" key={index}>
                   <div className="box">
                     {item.src ? (
-                      <a href={item.src} target="_blank">
+                      <a href={item.src} rel="noreferrer" target="_blank">
                         <img
                           className="home-img"
                           src={
