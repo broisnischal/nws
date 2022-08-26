@@ -2,7 +2,7 @@
 
 import "./index.scss";
 import { useState } from "react";
-import Hehe from "../../assets/imgs/hehe.png";
+// import Hehe from "../../assets/imgs/hehe.png";
 import { Parallax } from "react-scroll-parallax";
 const About = () => {
   const [loaded, setLoaded] = useState(false);
