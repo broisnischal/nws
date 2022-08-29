@@ -1,16 +1,7 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import "./index.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-// import { Zoom } from "react-awesome-reveal";
-// import { useState, useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Navigation, Pagination, Autoplay } from "swiper";
-import "swiper/scss";
-import "swiper/scss/navigation";
-import "swiper/scss/pagination";
-import "swiper/scss/autoplay";
 
 const works = [
   {

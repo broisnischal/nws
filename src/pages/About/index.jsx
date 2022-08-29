@@ -1,5 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
-
 import "./index.scss";
 import { useState } from "react";
 // import Hehe from "../../assets/imgs/hehe.png";
@@ -39,29 +37,29 @@ const About = () => {
             </div>
             <p className="details">
               Hey you <span className="emoji rocket">🚀</span>, Great ! that you
-              made it here , So now let's find me more, I'm tech enthusiast and
+              made it here , So now let&apos;s find me more, I&apos;m tech enthusiast and
               night dreamer.I am BlackCat who is willing to learn everything
               possible also,I am a <span className="focus">Full</span> Stack
               Developer, I mean Pull stack who{" "}
               <span className="focus">pulls</span> code from Github and
-              Stackoverflow ,Hehe Jokes a margin-left&lt;side&gt;. Now let's
+              Stackoverflow ,Hehe Jokes a margin-left&lt;side&gt;. Now let&apos;s
               know what do i do?. WebDev,AppDev,GameDev,3d Modeling,Graphic
               Designing & also, I mentioned me as a BlackCat so, I am also
-              learning hacking atleast somehow.I mean to alert("Hecked NASA").
+              learning hacking atleast somehow.I mean to alert(&quot;Hecked NASA&quot;).
               <br /> <br />I am Window Lover.I search for free courses on udemy.
-              I google "email regex?". I am a photo&video Editor, I design logo
-              , ideas which I can't even <span className="focus">
+              I google &quot;email regex?&quot;. I am a photo&video Editor, I design logo
+              , ideas which I can&apos;t even <span className="focus">
                 rebember
               </span>{" "}
               the spelling of remember so I have to google it.
               <br />
-              <br />⚡ Fun fact about me basically programmers don't have
+              <br />⚡ Fun fact about me basically programmers don&apos;t have
               girlfriend but I do :) You can 💬 Ask me about TS,Dart,Cpp,
-              🐍,JS,PHP,<span className="focus">C%23</span> don't get? I mean
+              🐍,JS,PHP,<span className="focus">C%23</span> don&apos;t get? I mean
               C#. I am 17 years old and hardly got +3 years of experience in
               coding and above mentioned Tech Stuffs. Being a{" "}
               <span className="focus">FireFly</span> I am able to learn{" "}
-              <span className="focus">Few</span> things but lot's ideas and
+              <span className="focus">Few</span> things but lot&apos;s ideas and
               creativeness. Yaaa this much for the about me &lt;Section /&gt;{" "}
               <span className="emoji">🔥</span>
             </p>

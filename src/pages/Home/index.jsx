@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 
 import { useState } from "react";
@@ -36,11 +35,11 @@ const Home = () => {
             </div>
             <div className="details">
               <span className="info ">&lt;info&gt;</span>
-              <h4>Hello, I'm</h4>
+              <h4>Hello, I&apos;m</h4>
               <h1>
                 <span className="fname">Nischal</span> Dahal
               </h1>
-              <h4>A simple guy who think's about everyone's death. </h4>
+              <h4>A simple guy who think&apos;s about everyone&apos;s death. </h4>
               <h4 className="highlights ">
                 {" "}
                 PROGRAMMER | EDITOR | DESIGNER | JavaScript Expert{" "}
@@ -52,12 +51,12 @@ const Home = () => {
                 this which i know you are,Then my name is Nischal Dahal and A
                 big <span className="focus">applaud</span>👏 for you that you
                 landed here in my portfolio. Here you will know about me, that
-                even I don't know what to write so lorem500🤣. Go through bottom
+                even I don&apos;t know what to write so lorem500🤣. Go through bottom
                 sections with smooth scrolling to Deep dive into{" "}
                 <span className="emoji">🌊</span>.
                 <span className="info end">&lt;/info&gt;</span>
               </p>
-              <button className="btn-disabled">Let's work together!</button>
+              <button className="btn-disabled">Let&apos;s work together!</button>
             </div>
           </div>
         </Bounce>

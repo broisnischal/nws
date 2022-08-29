@@ -15,7 +15,7 @@ const SingleSkill = ({ title, percentage, color }) => {
     if (inView) {
       iref.current.style.width = `${percentage}%`;
     } else {
-      iref.current.style.width = `0%`;
+      iref.current.style.width = "0%";
     }
   }, [inView, percentage]);
 

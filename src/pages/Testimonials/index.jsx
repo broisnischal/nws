@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 
 import "./index.scss";
 import Pattern from "../../assets/svgs/pattern.svg";

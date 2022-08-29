@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 import Rocket from "../../assets/imgs/rocket.png";
 import { useInView, InView } from "react-intersection-observer";
@@ -42,21 +41,20 @@ const Contact = () => {
         formref.current,
         "SUwRzXhu2XrS58b-c"
       )
-      .then(
-        (result) => {
-          formref.current.reset();
-          setStatus(true);
-          setType("success");
-          setTitle("Sucessfully sent message!!");
-          setLoading(false);
-        },
-        (error) => {
-          setStatus(true);
-          setType("error");
-          setTitle("Failed to send message !!");
-          setLoading(false);
-        }
-      );
+      .then(() => {
+        formref.current.reset();
+        setStatus(true);
+        setType("success");
+        setTitle("Sucessfully sent message!!");
+        setLoading(false);
+      
+      }).catch(() => {
+        
+        setStatus(true);
+        setType("error");
+        setTitle("Failed to send message !!");
+        setLoading(false);
+      })
   };
 
   useEffect(() => {
@@ -83,7 +81,7 @@ const Contact = () => {
         <div className="right">
           <a href="#services">
             <button>
-              <img src={Finger} width="50px" /> Let's Do this
+              <img src={Finger} width="50px" /> Let&apos;s Do this
             </button>
           </a>
         </div>
@@ -192,7 +190,7 @@ const Contact = () => {
               >
                 <Mappopup>
                   neeswebserives | He is <span className="focus">dreaming</span>{" "}
-                  somwhere here. Don't disturb him, but you can schedule coffee
+                  somwhere here. Don&apos;t disturb him, but you can schedule coffee
                   with him.
                 </Mappopup>
               </Marker>
