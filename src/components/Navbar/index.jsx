@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import "./index.scss";
 import { Link } from "react-router-dom";
 import {
@@ -60,11 +59,7 @@ const Navbar = () => {
             />
             <span>Services</span>
           </a>
-          <a
-            href="#contact"
-            className="nav-link"
-            // style={({isActive}) => (isActive ? activeStyle : undefined)}
-          >
+          <a href="#contact" className="nav-link">
             <FontAwesomeIcon
               icon={faEnvelope}
               className="nav-icon works"
