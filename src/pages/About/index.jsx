@@ -1,6 +1,6 @@
 import "./index.scss";
 import { useState } from "react";
-// import Hehe from "../../assets/imgs/hehe.png";
+import Hehe from "../../assets/imgs/hehe.png";
 import { Parallax } from "react-scroll-parallax";
 const About = () => {
   const [loaded, setLoaded] = useState(false);
@@ -24,7 +24,7 @@ const About = () => {
                   />
                 )}
                 <img
-                  src="https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412469/icons/hehe_1_11zon_vtgvk0.png"
+                  src={Hehe}
                   onLoad={() => setLoaded(true)}
                   style={loaded ? {} : { display: "none" }}
                 />

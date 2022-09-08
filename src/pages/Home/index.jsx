@@ -17,11 +17,11 @@ import Knowledge from "../Knowledge/index.jsx";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Info from "./../Info/index";
 import Recent from "../Recent/index.jsx";
-
+import Nees from "../../assets/imgs/nees.png";
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
-  const src =
-    "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412465/icons/pp_2_11zon_sn5bhi.png";
+  // const src =
+  //   "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412465/icons/pp_2_11zon_sn5bhi.png";
 
   const { text } = useTypewriter({
     words: ["Developer", "Editor", "Designer", "Javascript Expert"],
@@ -37,7 +37,7 @@ const Home = () => {
               {loaded ? null : <div className="loading-shimmer" />}
               <img
                 className="home-img"
-                src={src}
+                src={Nees}
                 onLoad={() => setLoaded(true)}
                 style={loaded ? {} : { display: "none" }}
               />
