@@ -108,14 +108,37 @@ const Footer = () => {
         </div>
         <div className="bottom-footer">
           <span>
-            <AddIcCallIcon /> 977-9803104764
+            <a
+              className="contact-href"
+              target="_blank"
+              rel="noreferrer"
+              href="tel:+9779803104764"
+            >
+              <AddIcCallIcon />
+              9779803104764{" "}
+            </a>
           </span>
           <span>
-            neeswebservices
-            <AlternateEmailIcon />
-            gmail.com
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="mailto:info@nischal-dahal.com.np"
+              className="contact-href"
+            >
+              info
+              <AlternateEmailIcon />
+              nischal-dahal.com.np
+            </a>
           </span>
-          <span>© 2022 neeswebservices | All rights reserved.</span>
+          <a
+            href="https://www.google.com/search?q=neeswebservices"
+            className="mapbtn"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Find on Google
+          </a>
+          <span>© 2022 neeswebservices | All right reserved.</span>
           <small style={{ display: "flex", alignItems: "center" }}>
             Made with{" "}
             <FavoriteOutlinedIcon

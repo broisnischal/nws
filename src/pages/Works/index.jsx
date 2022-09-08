@@ -1,7 +1,16 @@
+/* eslint-disable import/no-unresolved */
 import "./index.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+// import { Zoom } from "react-awesome-reveal";
+// import { useState, useEffect } from "react";
 import { Parallax } from "react-scroll-parallax";
 import { Navigation, Pagination, Autoplay } from "swiper";
+import "swiper/scss";
+import "swiper/scss/navigation";
+import "swiper/scss/pagination";
+import "swiper/scss/autoplay";
+import { useEffect, useState } from "react";
 
 const works = [
   {
@@ -49,6 +58,23 @@ const works = [
 
 const Works = () => {
   // const swiper = useSwiper();
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  //choose the screen size
+  const handleResize = () => {
+    if (window.innerWidth < 720) {
+      setIsMobile(true);
+    } else {
+      setIsMobile(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", handleResize);
+    return window.removeEventListener("resize", handleResize);
+  });
+
   return (
     <section id="works" className="work-container">
       <div className="center">
@@ -56,13 +82,14 @@ const Works = () => {
           Working with{" "}
           <div className="highlight">Experiences and Highlights</div>{" "}
         </h1>
-        <Parallax translateY={[40, -40]} speed={15}>
+        <Parallax translateY={isMobile ? [20, -10] : [40, -40]} speed={15}>
           <Swiper
+            className="swiper-div"
             modules={[Navigation, Pagination, Autoplay]}
             spaceBetween={100}
             slidesPerView={3}
             autoplay={{
-              delay: 1500,
+              delay: 2500,
             }}
             navigation
             pagination={{ clickable: true }}

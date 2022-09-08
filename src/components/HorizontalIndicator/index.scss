@@ -29,10 +29,10 @@
 @media screen and (max-width: 1200px) {
   .horizontal-box {
     position: fixed;
-    top: 0;
+    top: 10vh;
     z-index: 1000;
     .inner {
-      height: 2px;
+      height: 3px;
     }
   }
 }

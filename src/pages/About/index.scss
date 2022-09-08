@@ -19,6 +19,18 @@
   .center {
     .title {
       text-align: center;
+      position: relative;
+      overflow: hidden;
+      padding: 10px 0;
+      &::after {
+        content: "";
+        height: 2px;
+        width: 100%;
+        background: white;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+      }
     }
 
     .flex {
@@ -52,7 +64,7 @@
           font-family: Aurore;
         }
         .details {
-          text-align: justify;
+          // text-align: justify;
           letter-spacing: 0.5px;
         }
         .hire {
@@ -78,7 +90,8 @@
             font-family: Aurore;
           }
           .details {
-            text-align: justify;
+            text-align: left;
+            letter-spacing: 1px;
             margin: 20px auto;
           }
           .hire {

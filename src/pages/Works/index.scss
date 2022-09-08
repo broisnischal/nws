@@ -1,5 +1,5 @@
 .work-container {
-  min-height: 100vh;
+  min-height: 120vh;
   // background-color: var(--white);
   background: white;
   display: flex;
@@ -16,7 +16,7 @@
     .title {
       text-align: center;
       margin-bottom: 20px;
-      transform: translateY(50px);
+      transform: translateY(40px);
       background: white;
       width: fit-content;
       margin: auto;
@@ -81,14 +81,19 @@
 @media screen and (max-width: 1200px) {
   .work-container {
     min-height: 90vh;
+
     overflow: hidden;
     background-repeat: no-repeat;
     padding: 0;
     .center {
+      isolation: isolate;
+
       .title {
+        z-index: 99;
         text-align: center;
         margin-bottom: 20px;
-        transform: translateY(100px);
+        transform: translateY(120px);
+        background: transparent;
         width: fit-content;
         margin: auto;
         padding: 0;
@@ -96,7 +101,24 @@
         color: transparent;
         -webkit-text-stroke-color: var(--primary-dark);
         letter-spacing: 2px;
-        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-width: 0.5px;
+
+        .highlight {
+          font-size: 15px;
+        }
+      }
+      .swiper {
+        padding-bottom: 0;
+        z-index: 1;
+        .box {
+          border: none;
+          background: transparent;
+          margin: auto;
+          margin: 50px auto;
+          &:hover {
+            box-shadow: none;
+          }
+        }
       }
     }
   }

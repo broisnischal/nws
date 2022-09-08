@@ -55,7 +55,7 @@ const Projects = () => {
               damping={30}
               triggerOnce
             >
-              <Fade delay={index * 70}>
+              <Fade delay={index * 100} triggerOnce>
                 <Card
                   url={item?.url}
                   title={item?.title}

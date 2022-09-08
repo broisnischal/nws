@@ -1,4 +1,3 @@
-
 import "./index.scss";
 import Pattern from "../../assets/svgs/pattern.svg";
 import Line from "../../assets/svgs/line.svg";
@@ -69,7 +68,7 @@ const Testimonial = () => {
         </Parallax>
         <div className="content-div">
           {testimonials.map((item, index) => (
-            <Zoom triggerOnce key={index}>
+            <Zoom triggerOnce key={index} delay={500}>
               <Parallax translateY={10}>
                 <div className="testmonial" key={index}>
                   <div className="box">

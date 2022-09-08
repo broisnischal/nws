@@ -1,5 +1,6 @@
 .parent {
   width: 100%;
+  // margin-top: 10vh;
   height: 100%;
   overflow-x: hidden;
   .home-container {
@@ -62,7 +63,7 @@
       }
       .details {
         flex-grow: grow;
-        text-align: justify;
+        // text-align: justify;
       }
     }
   }

@@ -5,14 +5,15 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: white;
+  background: #eee;
+
   position: relative;
 
   .rocket {
     &::-webkit-scrollbar {
       display: none;
     }
-    bottom: 20px;
+    bottom: 120px;
     left: 100px;
     z-index: 999;
     position: absolute;
@@ -166,6 +167,21 @@ input:invalid {
   }
 
   .contact-container {
+    .rocket {
+      display: none !important;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+      bottom: 20px;
+      left: 100px;
+      z-index: 999;
+      position: absolute;
+      display: inline-block;
+      transform: translate(100px, -70px);
+      .rocketself {
+        width: 100px;
+      }
+    }
     &::-webkit-scrollbar {
       display: none;
     }
@@ -193,6 +209,7 @@ input:invalid {
 
       .map-container {
         width: 95%;
+        margin-top: 50px;
       }
     }
   }

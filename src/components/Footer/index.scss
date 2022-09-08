@@ -59,6 +59,17 @@
         justify-content: center;
         padding: 3px 2px;
       }
+      .mapbtn {
+        background: transparent;
+        color: white;
+        border-radius: 9px;
+        border: 1px solid white;
+        padding: 2px 15px;
+        margin: 10px auto;
+        &:hover {
+          color: var(--accent-color);
+        }
+      }
     }
   }
 }
@@ -83,4 +94,8 @@
       margin: auto;
     }
   }
+}
+
+.contact-href {
+  display: flex;
 }

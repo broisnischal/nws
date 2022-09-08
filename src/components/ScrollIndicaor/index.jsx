@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import "./index.scss";
 // import Housefly from "../../assets/imgs/gifs/Housefly.gif";
 
