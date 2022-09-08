@@ -2,6 +2,7 @@ import "./index.scss";
 // import Html from "../../assets/imgs/logo1.png";
 // import JS from "../../assets/imgs/logo3.png";
 import SingleSkill from "../../components/SingleSkill";
+import { Fade } from "react-awesome-reveal";
 
 const skill = [
   {
@@ -108,24 +109,27 @@ const Skills = () => {
           ></path>
         </svg>
       </div>
-      <div className="center">
-        <h1 className="title">
-          I am <span className="focus">Learning</span>,
-          <div className="highlight">
-            I use phone all day just to develop skills.
+      <Fade delay={100}>
+        <div className="center">
+          <h1 className="title">
+            I am <span className="focus">Learning</span>,
+            <div className="highlight">
+              I use phone all day just to develop skills.
+            </div>
+          </h1>
+          <div className="skill-container">
+            {skill.map((item, index) => (
+              <SingleSkill
+                index={index}
+                key={index}
+                title={item.title}
+                color={item.color}
+                percentage={item.percentage}
+              />
+            ))}
           </div>
-        </h1>
-        <div className="skill-container">
-          {skill.map((item, index) => (
-            <SingleSkill
-              key={index}
-              title={item.title}
-              color={item.color}
-              percentage={item.percentage}
-            />
-          ))}
         </div>
-      </div>
+      </Fade>
     </section>
   );
 };

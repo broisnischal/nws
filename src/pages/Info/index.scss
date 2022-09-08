@@ -1,0 +1,163 @@
+.info-container {
+  min-height: 100vh;
+  background: #111111;
+  color: white;
+  padding: 200px 0;
+  .center {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .title {
+      margin-bottom: 100px;
+      border-bottom: 2px solid var(--primary-color);
+      padding-bottom: 10px;
+    }
+    .section {
+      display: flex;
+      .left {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        .single {
+          &:hover .icon {
+            transition: all 0.3s cubic-bezier(0.47, 0, 0.745, 0.715);
+            transform: translateX(-20px);
+          }
+          display: flex;
+          align-items: flex-start;
+          justify-content: flex-start;
+          position: relative;
+          height: auto;
+          margin-bottom: 50px;
+          .icon {
+            z-index: 3;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--primary-varient);
+            .icon-self {
+              padding: 10px;
+              z-index: 3;
+              font-size: 15px;
+              color: white;
+            }
+          }
+          .content {
+            // background: pink;
+            .date {
+              background: #212121;
+              width: fit-content;
+              padding: 3px 20px;
+              margin-bottom: 10px;
+              font-size: 12px;
+              border-radius: 30px;
+            }
+            h2 {
+              font-family: "Inter";
+            }
+            #focus {
+              color: var(--primary-color);
+              font-size: 15px;
+            }
+            .desc {
+              margin-top: 10px;
+              &::first-letter {
+                color: var(--primary-varient);
+                font-weight: 900;
+              }
+            }
+          }
+        }
+      }
+      .right {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        .single {
+          display: flex;
+          align-items: flex-start;
+          justify-content: center;
+          position: relative;
+          height: auto;
+          margin-bottom: 50px;
+          .icon {
+            z-index: 3;
+            margin-right: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: var(--primary-varient);
+            .icon-self {
+              padding: 10px;
+              z-index: 3;
+              font-size: 15px;
+              color: white;
+            }
+          }
+          .content {
+            // background: pink;
+            .date {
+              background: #212121;
+              width: fit-content;
+              padding: 3px 20px;
+              margin-bottom: 10px;
+              font-size: 12px;
+              border-radius: 30px;
+            }
+            h2 {
+              font-family: "Inter";
+              font-size: 16px;
+            }
+            #focus {
+              color: var(--primary-color);
+              font-size: 15px;
+              text-transform: capitalize;
+            }
+            .desc {
+              margin-top: 10px;
+              //   width: 300px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.animate {
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 1200px) {
+  .info-container {
+    .center {
+      .title {
+        text-align: center;
+        font-size: 10px;
+        border-bottom: none;
+        margin-bottom: 0;
+      }
+      .section {
+        flex-direction: column;
+        margin: auto;
+        .left,
+        .right {
+          .single {
+            width: 90%;
+            margin: 20px auto;
+            position: relative;
+          }
+        }
+      }
+    }
+  }
+}

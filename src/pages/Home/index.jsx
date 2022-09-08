@@ -12,12 +12,21 @@ import Projects from "../Project";
 import Testimonial from "../Testimonials";
 import Blog from "../Blog";
 import Footer from "../../components/Footer";
+import Plan from "../Plan/index.jsx";
+import Knowledge from "../Knowledge/index.jsx";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
+import Info from "./../Info/index";
+import Recent from "../Recent/index.jsx";
 
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
   const src =
     "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412465/icons/pp_2_11zon_sn5bhi.png";
 
+  const { text } = useTypewriter({
+    words: ["Developer", "Editor", "Designer", "Javascript Expert"],
+    loop: 0,
+  });
   return (
     <div className="parent">
       {/* <Parallax translateY={-40} speed={10}> */}
@@ -39,10 +48,16 @@ const Home = () => {
               <h1>
                 <span className="fname">Nischal</span> Dahal
               </h1>
-              <h4>A simple guy who think&apos;s about everyone&apos;s death. </h4>
+              <h4>
+                A simple guy who think&apos;s about everyone&apos;s death.{" "}
+              </h4>
               <h4 className="highlights ">
                 {" "}
-                PROGRAMMER | EDITOR | DESIGNER | JavaScript Expert{" "}
+                I am{" "}
+                <span className="animating-text">
+                  {text}
+                  <Cursor />
+                </span>
               </h4>
               <p className="">
                 A creative <span className="emoji">0️⃣</span> from Nepal who is
@@ -50,25 +65,32 @@ const Home = () => {
                 kidding, hello if you are <span className="focus">reading</span>{" "}
                 this which i know you are,Then my name is Nischal Dahal and A
                 big <span className="focus">applaud</span>👏 for you that you
-                landed here in my portfolio. Here you will know about me, that
-                even I don&apos;t know what to write so lorem500🤣. Go through bottom
-                sections with smooth scrolling to Deep dive into{" "}
-                <span className="emoji">🌊</span>.
+                landed here in my portfolio. Go through bottom sections with
+                smooth scrolling to Deep dive.{" "}
                 <span className="info end">&lt;/info&gt;</span>
               </p>
-              <button className="btn-disabled">Let&apos;s work together!</button>
+              <button className="btn-disabled">
+                Let&apos;s work together!
+              </button>
             </div>
           </div>
         </Bounce>
+        <a href="#about">
+          <div className="scroll-down"></div>
+        </a>
       </section>
       {/* </Parallax> */}
       <About />
       <Skills />
       <Works />
+      <Info />
+      <Knowledge />
       <Service />
       <Views />
       <Projects />
       <Blog />
+      <Plan />
+      <Recent />
       <Testimonial />
       <Contact />
       <Footer />

@@ -9,7 +9,7 @@
   .center {
     margin: auto;
     .content {
-      padding: 200px 0;
+      padding: 100px 0;
       .title {
         -webkit-text-stroke-color: #161616;
         -webkit-text-stroke-width: 2px;
@@ -32,19 +32,36 @@
       }
       .flex-wrapper {
         display: flex;
+        max-width: 1224px;
         flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
         .items {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 400px;
-          margin: auto;
-          padding: 20px;
-          text-align: center;
-          .count {
+          margin: 30px;
+          max-width: 200px;
+          height: 100%;
+          .icon-div {
+            display: flex;
+            align-items: flex-end;
+            justify-self: end;
+            padding: 10px;
+            margin-top: auto;
+            svg {
+              font-size: 40px;
+              opacity: 0.5;
+            }
+          }
+          .count-div {
+            display: flex;
+            flex-direction: column;
             margin-top: 50px;
-            display: grid;
-            place-items: center;
             color: #161616;
             span {
-              font-size: 100px;
+              font-size: 50px;
             }
           }
         }
@@ -73,6 +90,39 @@
         .bganimate {
           text-align: center;
           transform: translateX(0px);
+        }
+        .flex-wrapper {
+          display: flex;
+          max-width: 1224px;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: center;
+          .items {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 400px;
+            margin: 30px;
+            max-width: 200px;
+            .icon-div {
+              display: flex;
+              align-items: flex-end;
+              padding: 10px;
+              svg {
+                font-size: 50px;
+                opacity: 0.5;
+              }
+            }
+            .count-div {
+              display: flex;
+              flex-direction: column;
+              margin-top: 50px;
+              color: #161616;
+              span {
+                font-size: 70px;
+              }
+            }
+          }
         }
       }
     }

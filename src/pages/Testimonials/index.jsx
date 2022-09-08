@@ -23,10 +23,12 @@ const testimonials = [
     date: "Aug 15, 2022",
   },
   {
-    name: "Prakrati Acharya",
+    name: "Karina Shrestha",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662648522/icons/karina_v8bp0z.png",
     message:
       "I rarely like to write reviews, but the nws team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.",
-    date: "Aug 12, 2022",
+    src: "https://karinashrestha.com.np/",
+    date: "Sept 12, 2022",
   },
   {
     name: "Bidhan Acharya",

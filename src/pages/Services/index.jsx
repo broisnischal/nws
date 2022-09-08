@@ -82,7 +82,7 @@ const Service = () => {
       </div>
       <div className="service-container">
         {service.map((item, index) => (
-          <Fade key={index} triggerOnce delay={index * 200}>
+          <Fade key={index} triggerOnce delay={index * 50}>
             <div className="service">
               <div className="img">
                 <img src={item.imgsrc} loading="lazy" alt={item.title} />

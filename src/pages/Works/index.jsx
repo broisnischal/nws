@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable import/no-unresolved */
 import "./index.scss";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,13 +15,6 @@ import { useEffect, useState } from "react";
 
 const works = [
   {
-    title: "Neeswebservices",
-    description:
-      "Got a lot of suggestion and ideas from the company , with more than building app and ideas",
-    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661265737/icons/merologo_bamnlc.png",
-    date: "oct 2021 to present",
-  },
-  {
     title: "Routine of Nepal Technology ",
     description:
       "Working as a graphic designer, content creator and writer in the page also running page as a admin and founder. ",
@@ -34,25 +28,25 @@ const works = [
     date: "jan 2022 to present",
   },
   {
-    title: "Technical Vandar",
-    description:
-      "Working as a video editor and content creator with all the effort and love.",
-    img: "",
-    date: "aug 2021 to present",
-  },
-  {
-    title: "Cat industry",
-    description:
-      "Working as the scenior head of the digital marketing team in the phase. ",
-    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661100537/icons/digital_udjxqb.png",
-    date: "mar 2022 to present",
-  },
-  {
     title: "FreeLogo",
     description:
       "Helped to design and get the coolest idea of logo and vector graphics.",
     img: "https://www.thesmbguide.com/images/freelogoservices-1024x512-20190808.png",
     date: "oct 2021 to present",
+  },
+  {
+    title: "MeroNote",
+    description:
+      "Created the Note application using PHP for the project of friend and learned a lot of new things.",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662648078/icons/Screenshot_61_ebfqek.png",
+    date: "Aug 2022",
+  },
+  {
+    title: "Premier Class App",
+    description:
+      "Helped and learned to create android application and joining zoom application.",
+    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662648077/icons/premire_epo3k6.png",
+    date: "Sept 2022 ",
   },
 ];
 
@@ -60,7 +54,6 @@ const Works = () => {
   // const swiper = useSwiper();
 
   const [isMobile, setIsMobile] = useState(false);
-
   //choose the screen size
   const handleResize = () => {
     if (window.innerWidth < 720) {
@@ -82,31 +75,29 @@ const Works = () => {
           Working with{" "}
           <div className="highlight">Experiences and Highlights</div>{" "}
         </h1>
-        <Parallax translateY={isMobile ? [20, -10] : [40, -40]} speed={15}>
-          <Swiper
-            className="swiper-div"
-            modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={100}
-            slidesPerView={3}
-            autoplay={{
-              delay: 2500,
-            }}
-            navigation
-            pagination={{ clickable: true }}
-          >
-            {works.map((item, index) => (
-              <SwiperSlide className="swipe" key={index}>
-                <div className="box">
-                  <h3>{item.title}</h3>
-                  {item.img && <img src={item.img} />}
-                  <p>{item.description}</p>
-                  <h5> {item.date}</h5>
-                </div>
-              </SwiperSlide>
-            ))}
-            {/* <button onClick={() => swiper.slideNext()}>&gt;</button> */}
-          </Swiper>
-        </Parallax>
+        <Swiper
+          className="swiper-div"
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={100}
+          slidesPerView={3}
+          autoplay={{
+            delay: 2500,
+          }}
+          navigation
+          pagination={{ clickable: true }}
+        >
+          {works.map((item, index) => (
+            <SwiperSlide className="swipe" key={index}>
+              <div className="box">
+                <h3>{item.title}</h3>
+                {item.img && <img src={item.img} />}
+                <p>{item.description}</p>
+                <h5> {item.date}</h5>
+              </div>
+            </SwiperSlide>
+          ))}
+          {/* <button onClick={() => swiper.slideNext()}>&gt;</button> */}
+        </Swiper>
       </div>
     </section>
   );
