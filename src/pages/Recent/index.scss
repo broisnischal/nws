@@ -12,21 +12,14 @@
     .title {
       h1 {
         position: relative;
-        &::after {
-          content: "";
-          font-size: 17px;
-          position: absolute;
-          width: 30%;
-          height: 0.5px;
-          border-radius: 10px;
-          background: var(--primary-color);
-          top: 50%;
-          right: 50px;
-        }
+        text-align: center;
       }
     }
     .section {
       .spans {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         a {
           margin: auto 10px;
         }

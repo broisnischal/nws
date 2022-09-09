@@ -6,7 +6,12 @@ import { useEffect } from "react";
 const Plan = () => {
   const urls = [
     "https://nischal-dahal.com.np/",
+    "https://sudippandey.com.np/",
     "https://neeswebservices.business.site/",
+    "https://kuldipbastola.com.np/",
+    "https://karinashrestha.com.np/",
+    "https://itsnp.org/",
+    "https://routineoftechnology.business.site/",
   ];
   function random_item(items) {
     return items[Math.floor(Math.random() * items.length)];

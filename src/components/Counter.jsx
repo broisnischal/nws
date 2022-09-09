@@ -1,6 +1,5 @@
 import { useRef, useState, useEffect } from "react";
 import { useInView, InView } from "react-intersection-observer";
-
 const Counter = ({ start = 0, end }) => {
   const [count, setCount] = useState(null);
   //   const [mount, setMount] = useState(false);

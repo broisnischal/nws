@@ -6,7 +6,6 @@ const Blog = () => {
     <section id="blog" className="blog-container">
       {/* <Parallax translateX={3}> */}
       <h1 className="title">My Blogs | Upcoming 🚀</h1>
-      <small>Under Development</small>
       {/* </Parallax> */}
     </section>
   );

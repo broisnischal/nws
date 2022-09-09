@@ -77,6 +77,18 @@ const Views = () => {
             ))}
           </div>
         </div>
+        <center style={{ margin: "10px auto" }}>
+          <small>
+            Powered by{" "}
+            <a
+              href="https://www.npmjs.com/package/react-number-increment"
+              target="_blank"
+              rel="noreferrer"
+            >
+              react-number-increment
+            </a>
+          </small>
+        </center>
       </div>
     </section>
   );

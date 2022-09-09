@@ -146,6 +146,24 @@ const Footer = () => {
             />{" "}
             in 8 hours by NWS Inc.
           </small>
+          <a
+            style={{ marginTop: "10px" }}
+            onClick={(e) => {
+              e.preventDefault();
+            }}
+            href="//www.dmca.com/Protection/Status.aspx?ID=82bf1abe-26d7-4897-aa06-ed39b9ee761b"
+            title="DMCA.com Protection Status"
+            className="dmca-badge"
+          >
+            {" "}
+            <img
+              src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-01.png?ID=82bf1abe-26d7-4897-aa06-ed39b9ee761b"
+              alt="DMCA.com Protection Status"
+            />
+          </a>{" "}
+          <script src="https://images.dmca.com/Badges/DMCABadgeHelper.min.js">
+            {" "}
+          </script>
         </div>
       </div>
     </footer>
