@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import AddIcCallIcon from "@mui/icons-material/AddIcCall";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
+import { LinkedIn } from "@mui/icons-material";
 // import CopyrightIcon from "@mui/icons-material/Copyright";
 import Quote from "../../assets/svgs/quote.svg";
 import FormatQuoteIcon from "@mui/icons-material/FormatQuote";
@@ -94,6 +95,15 @@ const Footer = () => {
               target="_blank"
             >
               <TelegramIcon className="social-icon" />
+            </a>
+          </div>
+          <div className="single">
+            <a
+              href="https://linkedin.com/in/neeswebservices"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <LinkedIn className="social-icon" />
             </a>
           </div>
           <div className="single">

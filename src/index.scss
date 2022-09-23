@@ -115,7 +115,7 @@ li {
   font-weight: normal;
   font-style: normal;
 }
-img:not(.home-img) {
+img:not(.home-img):not(.projectimages) {
   pointer-events: none;
 }
 @font-face {

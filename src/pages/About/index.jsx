@@ -2,9 +2,16 @@ import "./index.scss";
 import { useState } from "react";
 import Hehe from "../../assets/imgs/hehe.png";
 import { Parallax } from "react-scroll-parallax";
-const About = () => {
-  const [loaded, setLoaded] = useState(false);
+import { saveAs } from "file-saver";
+import CV from "../../assets/nischal.pdf";
+import { Open } from "../../utils/Open";
 
+const About = () => {
+  const date = new Date();
+  const [loaded, setLoaded] = useState(false);
+  const downloadImage = () => {
+    saveAs(CV, `nischal_resume_${date.getTime()}.pdf`);
+  };
   return (
     <section id="about" className="about-container">
       {/* <div className="arrow"></div> */}
@@ -68,9 +75,21 @@ const About = () => {
                 </li>
               </ol>
             </p>
-
+            <br />
             {/* <button className="btn-primary hire">Hire Me</button> */}
-            <button className="btn-primary">CV</button>
+            <button className="btn-primary" onClick={downloadImage}>
+              RESUME
+            </button>
+            <button
+              className="btn"
+              onClick={(e) => {
+                e.preventDefault();
+                Open("https://www.github.com/neeswebservices");
+              }}
+              style={{ marginLeft: 20 }}
+            >
+              GITHUB
+            </button>
           </div>
         </div>
       </div>

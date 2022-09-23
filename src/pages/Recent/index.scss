@@ -1,71 +1,20 @@
 .recent-div {
-  min-height: 50vh;
+  min-height: 80vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 100px 0;
-  background: #35354e;
+  // background: #35354e;
+  background: #1d1d1d;
+  background: #161616;
   color: white;
-  .center {
-    display: flex;
-    flex-direction: column;
-    .title {
-      h1 {
-        position: relative;
-        text-align: center;
-      }
-    }
-    .section {
-      .spans {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        a {
-          margin: auto 10px;
-        }
-      }
-      .flex-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        .box {
-          cursor: pointer;
-          max-width: 300px;
-          margin: 20px;
-          border-radius: 10px;
-          overflow: hidden;
-          height: 250px;
-          border: 1px solid rgb(80, 80, 80);
-          .img-container {
-            max-width: 300px;
-            width: 100%;
-            height: 250px;
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            filter: blur(5px);
-          }
-          .details {
-            padding: 50px 20px;
-            transform: translateY(-250px);
-            visibility: hidden;
-          }
-          &:hover .details {
-            transition: all 0.2s ease-in-out;
-            background: rgba($color: #000000, $alpha: 0.4);
-            height: 100%;
-            visibility: visible;
-            h2 {
-              margin-bottom: 20px;
-            }
-          }
-        }
-      }
-    }
+  flex-direction: column;
+
+  h1 {
+    text-align: center;
+    margin: 10px;
   }
 }
-
 @media screen and (max-width: 1200px) {
   .recent-div {
     .center {
@@ -79,4 +28,129 @@
       }
     }
   }
+}
+
+// .box {
+//   cursor: pointer;
+//   max-width: 300px;
+//   margin: 20px;
+//   border-radius: 10px;
+//   overflow: hidden;
+//   height: 250px;
+//   border: 1px solid rgb(80, 80, 80);
+//   .img-container {
+//     max-width: 300px;
+//     width: 100%;
+//     height: 250px;
+//     background-size: cover;
+//     background-position: center;
+//     background-repeat: no-repeat;
+//     filter: blur(5px);
+//   }
+//   .details {
+//     padding: 50px 20px;
+//     transform: translateY(-250px);
+//     visibility: hidden;
+//   }
+//   &:hover .details {
+//     transition: all 0.2s ease-in-out;
+//     background: rgba($color: #000000, $alpha: 0.4);
+//     height: 100%;
+//     visibility: visible;
+//     h2 {
+//       margin-bottom: 20px;
+//     }
+//   }
+// }
+
+.container {
+  max-width: 600px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .choices img {
+  width: 50px;
+  height: 50px;
+  overflow: hidden;
+  object-fit: cover;
+  background-position: center;
+  display: block;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 10px;
+}
+.container .choices {
+  flex: 1;
+  margin: 30px;
+  overflow-y: scroll;
+  height: 300px;
+  border-right: 2px solid rgb(170, 170, 170);
+}
+
+.active {
+  border: 3px solid #fc9f1c;
+}
+
+.container .choosen {
+  max-width: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+  flex: 5;
+  overflow: hidden;
+}
+
+.container .choosen img {
+  width: 90%;
+  border-radius: 10px;
+}
+.imgzoom {
+  width: 100px;
+  height: 100px;
+  background: Red;
+}
+
+.container .image-gallery {
+  position: absolute;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid black;
+  padding: 0 100px;
+  background: white;
+}
+
+.container .image-gallery img {
+  max-width: 800px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .container .choices {
+    display: flex;
+    width: 60%;
+    padding: 0 50px;
+    height: auto;
+  }
+  .container .choosen {
+    width: 50%;
+  }
+}
+
+.download-choosen {
+  position: absolute;
+  padding: 8px 0;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  opacity: 0.8;
 }

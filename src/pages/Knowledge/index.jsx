@@ -54,7 +54,7 @@ const Knowledge = () => {
               style={{ margin: "auto" }}
             >
               <div key={index} className="box">
-                <img src={item.icon} alt="" className="icon" />
+                <img src={item.icon} alt={item.title} className="icon" />
                 <h4>{item.title}</h4>
               </div>
             </Bounce>

@@ -18,13 +18,22 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import Info from "./../Info/index";
 import Recent from "../Recent/index.jsx";
 import Nees from "../../assets/imgs/nees.png";
+import { Open } from "../../utils/Open";
+
 const Home = () => {
   const [loaded, setLoaded] = useState(false);
   // const src =
   //   "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661412465/icons/pp_2_11zon_sn5bhi.png";
 
   const { text } = useTypewriter({
-    words: ["Developer", "Editor", "Designer", "Javascript Expert"],
+    words: [
+      "Developer",
+      "Editor",
+      "Designer",
+      "Javascript Expert",
+      "3d Moddler",
+      "Game Developer",
+    ],
     loop: 0,
   });
   return (
@@ -69,8 +78,27 @@ const Home = () => {
                 smooth scrolling to Deep dive.{" "}
                 <span className="info end">&lt;/info&gt;</span>
               </p>
-              <button className="btn-disabled">
-                Let&apos;s work together!
+
+              <button
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  Open("https://www.linkedin.com/in/neeswebservices");
+                }}
+              >
+                Let&apos;s Connect !
+              </button>
+              <button
+                className="btn"
+                onClick={(e) => {
+                  e.preventDefault();
+                  Open(
+                    "https://www.youtube.com/channel/UCP013FdEq1ti7fz1y78v1eg"
+                  );
+                }}
+                style={{ marginLeft: 20 }}
+              >
+                SUBSCRIBE
               </button>
             </div>
           </div>

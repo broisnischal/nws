@@ -85,7 +85,7 @@ const Service = () => {
           <Fade key={index} triggerOnce delay={index * 50}>
             <div className="service">
               <div className="img">
-                <img src={item.imgsrc} loading="lazy" alt={item.title} />
+                <img src={item.imgsrc} alt={item.title} />
               </div>
               <div className="content">
                 <h3>{item.title}</h3>

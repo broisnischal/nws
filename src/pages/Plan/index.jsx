@@ -9,8 +9,6 @@ const Plan = () => {
     "https://sudippandey.com.np/",
     "https://neeswebservices.business.site/",
     "https://kuldipbastola.com.np/",
-    "https://karinashrestha.com.np/",
-    "https://itsnp.org/",
     "https://routineoftechnology.business.site/",
   ];
   function random_item(items) {

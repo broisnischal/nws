@@ -47,14 +47,13 @@ const Contact = () => {
         setType("success");
         setTitle("Sucessfully sent message!!");
         setLoading(false);
-      
-      }).catch(() => {
-        
+      })
+      .catch(() => {
         setStatus(true);
         setType("error");
         setTitle("Failed to send message !!");
         setLoading(false);
-      })
+      });
   };
 
   useEffect(() => {
@@ -184,14 +183,16 @@ const Contact = () => {
                     iconUrl: markerIconPng,
                     iconSize: [25, 41],
                     iconAnchor: [12, 41],
+                    className: "home-img",
                   })
                 }
+                className="home-img"
                 position={[27.6756, 85.3459]}
               >
                 <Mappopup>
                   neeswebserives | He is <span className="focus">dreaming</span>{" "}
-                  somwhere here. Don&apos;t disturb him, but you can schedule coffee
-                  with him.
+                  somwhere here. Don&apos;t disturb him, but you can schedule
+                  coffee with him.
                 </Mappopup>
               </Marker>
             </MapContainer>

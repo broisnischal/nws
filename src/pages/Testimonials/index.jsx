@@ -23,11 +23,9 @@ const testimonials = [
     date: "Aug 15, 2022",
   },
   {
-    name: "Karina Shrestha",
-    img: "https://res.cloudinary.com/dacp0r5b7/image/upload/v1662648522/icons/karina_v8bp0z.png",
+    name: "Kritika Basnet",
     message:
       "I rarely like to write reviews, but the nws team truly deserve a standing ovation for their customer support, customisation and most importantly, friendliness and professionalism. Many thanks once again for everything and hope that I get to deal with you again in the near future.",
-    src: "https://karinashrestha.com.np/",
     date: "Sept 12, 2022",
   },
   {
@@ -70,19 +68,19 @@ const Testimonial = () => {
         </Parallax>
         <div className="content-div">
           {testimonials.map((item, index) => (
-            <Zoom triggerOnce key={index} delay={500}>
+            <Zoom triggerOnce key={index} delay={index * 200}>
               <Parallax translateY={10}>
                 <div className="testmonial" key={index}>
                   <div className="box">
                     {item.src ? (
                       <a href={item.src} rel="noreferrer" target="_blank">
                         <img
+                          alt={item.name}
                           className="home-img"
                           src={
                             item?.img ||
                             "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661510421/icons/images_r8bfk8.png"
                           }
-                          loading="lazy"
                         />
                       </a>
                     ) : (
@@ -91,7 +89,6 @@ const Testimonial = () => {
                           item?.img ||
                           "https://res.cloudinary.com/dacp0r5b7/image/upload/v1661510421/icons/images_r8bfk8.png"
                         }
-                        loading="lazy"
                       />
                     )}
 

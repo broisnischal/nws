@@ -81,6 +81,21 @@ const skill = [
     percentage: 45,
     color: "#c48ef0",
   },
+  {
+    title: "Davinci Resolve",
+    percentage: 35,
+    color: "#f54a5d",
+  },
+  {
+    title: "TypeScript",
+    percentage: 55,
+    color: "#2f74c0",
+  },
+  {
+    title: "IOT",
+    percentage: 45,
+    color: "#eee",
+  },
 ];
 
 const Skills = () => {
@@ -114,7 +129,7 @@ const Skills = () => {
           <h1 className="title">
             I am <span className="focus">Learning</span>,
             <div className="highlight">
-              I use phone all day just to develop skills.
+              i use phone all day just to develop skills.
             </div>
           </h1>
           <div className="skill-container">
